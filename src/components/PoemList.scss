@@ -1,0 +1,35 @@
+@use '../styles/variables';
+
+.poemList {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+
+  .poemGrid {
+    display: grid;
+    gap: 16px;
+  }
+
+  .card {
+    background: variables.$primary;
+    padding: 16px;
+    border-radius: 10px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      margin: 10px 0 6px 0;
+    }
+
+    p {
+      margin: 0;
+      font-family: 'Cormorant', serif;
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@use '../styles/variables';
+
+.notesList {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .notesGrid {
+    display: grid;
+    gap: 16px;
+  }
+
+  .noteCard {
+    background: variables.$primary;
+    padding: 14px;
+    border-radius: 10px;
+
+    h3 {
+      margin: 0 0 6px 0;
+    }
+
+    p {
+      margin: 0 0 10px 0;
+      color: variables.$secondary;
+    }
+  }
+}
+
+.searchBar {
+  margin-bottom: 20px;
+
+  input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid variables.$secondary;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+
+    &:focus {
+      border-color: variables.$secondary;
+      color: variables.$secondary;
+    }
+  }
+}
